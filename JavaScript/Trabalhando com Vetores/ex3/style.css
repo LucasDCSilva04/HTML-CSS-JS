@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #363636;
+    color: white;
+}
+main{
+    display: flex;
+    gap: 1vw;
+    text-align: center;
+    align-items: center;
+}
+button{
+    height: 5vh;
+    width: 60px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.24, rgb(205, 1, 198)), color-stop(0.62, rgb(255, 0, 170)));
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+    transition: 0.35s;
+}
+button:hover{
+    transform: scale(110%);
+}
+input{
+    border-radius: 5px;
+    text-align: center;
+    animation-name: led;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes led{
+    0%{
+        box-shadow: 0px 0px 20px 0px red;
+    }
+    50%{
+        box-shadow: 0px 0px 20px 0px green;
+    }
+    100%{
+        box-shadow: 0px 0px 20px 0px blue;
+    }
+}

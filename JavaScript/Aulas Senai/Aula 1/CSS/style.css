@@ -1,0 +1,6 @@
+body{
+    background-color: #363636;/*comentário de css*/
+    color: white;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversor HTML</title>
+        <link id="p1" rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <section id="page1" class="section1">
+                <div class="div1">
+                    <span class="span1">
+                        <p>Insira seu código em HTML</p>
+                        <textarea name="" id="codeHtml" cols="30" rows="10"></textarea>
+                    </span>
+        
+                    <span class="span1">
+                        <p>Insira seu código em JavaScript</p>
+                        <textarea name="" id="codeJs" cols="30" rows="10"></textarea>
+                    </span>
+                </div>
+        
+                <div class="btnArea">
+                    <input id="run" type="submit" value="Gerar Página" class="btn1">
+                </div>
+            </section>
+
+            <section id="page2" class="page2">
+                <section id="btnVoltar">
+                    <input onclick="voltar()" type="reset" form="formentrada" id="btreset" class="btn1" value="Voltar">
+                    <input onclick="resetar()" type="reset" form="formentrada" id="btreset" class="btn1" value="Resetar">
+                </section>
+                </section>
+            </section>
+
+        <script id="JsUser"></script>
+        <script src="./script.js"></script>
+
+    </body>
+</html>
